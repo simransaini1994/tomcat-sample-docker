@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build Application') {
             steps {
-                sh 'mvn -f pom.xml test install'
+                bat 'mvn -f pom.xml test install'
             }
             post {
                 success {
